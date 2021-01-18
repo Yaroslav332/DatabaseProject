@@ -1,0 +1,19 @@
+.friend_block{
+    border: 4px solid black;
+}
+
+.friend_block.gmail_block{
+    border-color:#660000;
+}
+
+.friend_block.yandex_block{
+    border-color: #CC9900;
+}
+
+.friend_block.mail_block{
+    border-color: #000066;
+}
+
+.friend_block.xabber_block{
+    border-color: #990033;
+}

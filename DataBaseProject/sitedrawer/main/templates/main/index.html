@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/draw.css' %}">
+    <title>Users</title>
+</head>
+<body>
+    {% for u in users %}
+    <div class="user_block">
+        <p>{{u.name}}</p>
+        {% for f in u.friends_set %}
+            <div class="friend_block {{f.domain}}_block">
+                <p>{{f.name}}</p>
+            </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>
+</html>

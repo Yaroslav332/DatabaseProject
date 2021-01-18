@@ -1,0 +1,27 @@
+body{
+    background: #666666;
+}
+
+.user_block{
+    padding: 1%;
+    background: #2c2c2c;
+    border-radius:10px;
+    margin:1%;
+}
+
+.user_block p{
+    font-size: 30px;
+    color : white;
+}
+
+.friend_block{
+    margin: 0.5%;
+    background:#5d5d5d;
+    padding: 0.5%;
+    border-radius:15px;
+}
+
+.friend_block p{
+    font-size:20px;
+    color : black;
+}
